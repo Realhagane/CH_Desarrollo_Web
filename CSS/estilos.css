@@ -1,0 +1,597 @@
+/* ESTILOS GLOBALES */
+/* INCLUYO GRID POR ZONAS, NO GLOBAL */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+/* HEADER CSS */
+
+.header {
+
+    padding: 0 5%;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(182, 182, 182);
+}
+
+/*______ NAV MENU */
+
+
+.header__nav {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    padding: 20px 0;
+}
+
+.nav__icon {
+    width: 140px;
+    margin: 30px;
+
+}
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: end;
+}
+
+.header__nav ul li {
+    padding: 10px;
+}
+
+.header__nav ul li a {
+    padding: 2px;
+    color: black;
+}
+
+.header__nav ul li a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.header__nav ul.nav__menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* HERO  */
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    align-items: center;
+    background-image: url(../Images/cabecerawebprincipal.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 38% 62%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+
+}
+
+.hero__title {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 100px;
+}
+
+.hero__btn {
+    color: #030303;
+    background-color: #f1dd04;
+    font-size: 19px;
+    border: 0px solid #2d63c8;
+    border-radius: 15px;
+    padding: 15px 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+}
+
+.hero__btn:hover {
+    color: #ffffff;
+    background-color: #ababab;
+}
+
+/* ABOUS US ///GRID */
+
+.aboutUs {
+    display: grid;
+    position: relative;
+    height: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 5%;
+}
+
+/* SERVICIOS //// INCLUSIÓN DE GRID */
+
+
+.servicios {
+    display: grid;
+    background-color: rgb(236, 236, 119);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 5%;
+
+}
+
+.servicios__tarjetas img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+
+.servicios__tarjetas h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.servicios__tarjetas a {
+    padding: 10px 0;
+    color: #1a1818;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.servicios__tarjetas a {
+    padding: 10px 0;
+    color: #1a1818;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.servicios__tarjetas a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.servicios__tarjetas--centro {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.tarjetas__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+/* GALERIA */
+
+.galeria {
+    display: grid;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 5%;
+}
+
+.galeria__contenedor {
+    display: grid;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 25px;
+
+
+
+}
+
+.galeria__contenedor__imagen {
+    width: 250px;
+}
+
+.tarjetas__titulo--negro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+
+}
+
+/* CLIENTES */
+
+.clientes {
+
+    display: grid;
+
+    background-color: rgb(236, 236, 119);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 5%;
+}
+
+.clientes__contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.clientes__tarjetas {
+    height: 80px;
+
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    display: grid;
+
+    height: auto;
+    min-height: 600px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-top: 20px;
+
+
+}
+
+
+.contacto__formulario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(236, 236, 119);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.formulario__campos {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(221, 222, 223);
+
+}
+
+.formulario__titulo {
+
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.btn_enviar {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgb(221, 222, 223);
+}
+
+
+.mapa_contenedor {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.contacto__mapa--estilo {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(221, 222, 223);
+    box-shadow: 5px 9px 10px 1px rgba(182, 182, 182, 0.59);
+
+
+}
+
+.direccion {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+
+
+/* FOOTER */
+.footer {
+
+    display: flex;
+    padding: 5px 20px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(214, 214, 214);
+
+}
+
+
+
+footer ul li {
+    display: inline;
+}
+
+
+
+/* SOBRE NOSOTROS */
+
+
+.hero--secciones {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    align-items: left;
+    background-image: url(../Images/cabeceraweb2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 38% 62%;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+
+.hero__title--secciones {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 100px;
+}
+
+.hero__title--aboutus {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 100px;
+
+}
+
+.secciones__title {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.aboutUs--seccion {
+    display: grid;
+    position: relative;
+    height: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-bottom: 30px;
+
+}
+
+.aboutUs__seccion_contenedor {
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    width: 500px
+}
+
+.aboutUs__contenido {
+    font-size: 20px;
+}
+
+.aboutUs__equipo {
+    display: grid;
+    background-color: rgb(236, 236, 119);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 5%;
+
+}
+
+.aboutUs__tarjetas img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+
+.aboutUs__tarjetas h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.aboutUs__tarjetas--centro {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.aboutUs__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+}
+
+.seccion__servicios {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.servicios--seccion {
+    display: grid;
+    position: relative;
+    height: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.servicios__seccion__contenedor {
+    display: block;
+    margin: auto;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1250px) {
+    .servicios--seccion {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    .aboutUs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .aboutUs--seccion {
+
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .servicios {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicios__tarjetas:nth-of-type(1) {
+        order: 4;
+    }
+
+    .servicios__tarjetas:nth-of-type(2) {
+        order: 3;
+    }
+
+    .servicios__tarjetas:nth-of-type(3) {
+        order: 2;
+    }
+
+    .servicios__tarjetas--centro:nth-of-type(4) {
+        order: 1;
+    }
+
+    .servicios__tarjetas--centro {
+        order: 1;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .clientes {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clientes__contenedor:nth-of-type(1) {
+        order: 4;
+    }
+
+    .clientes__contenedor:nth-of-type(2) {
+        order: 3;
+    }
+
+    .clientes__contenedor:nth-of-type(3) {
+        order: 2;
+    }
+
+    .clientes__contenedor:nth-of-type(4) {
+        order: 1;
+    }
+
+    .contacto {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .galeria__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutUs__equipo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    .servicios {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .galeria__contenedor {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .clientes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
