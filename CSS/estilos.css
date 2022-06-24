@@ -70,7 +70,9 @@ ul {
 }
 
 .header__nav ul li a:hover {
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 210, 10);
+    transition: 800ms;
+
 }
 
 .header__nav ul.nav__menu {
@@ -119,6 +121,7 @@ ul {
 .hero__btn:hover {
     color: #ffffff;
     background-color: #ababab;
+    transition: 500ms;
 }
 
 /* ABOUS US ///GRID */
