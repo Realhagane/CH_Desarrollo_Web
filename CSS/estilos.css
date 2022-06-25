@@ -38,47 +38,18 @@ ul {
 
 /*______ NAV MENU */
 
-
-.header__nav {
-    font-size: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    padding: 20px 0;
-}
-
-.nav__icon {
-    width: 140px;
-    margin: 30px;
-
+.navbar {
+    padding: 25px 0px;
 }
 
 
-.header__nav ul {
-    display: flex;
-    justify-content: end;
-}
-
-.header__nav ul li {
-    padding: 10px;
-}
-
-.header__nav ul li a {
-    padding: 2px;
-    color: black;
-}
-
-.header__nav ul li a:hover {
-    border-bottom: 2px solid rgb(255, 210, 10);
+.navbar ul li a:hover {
+    border-bottom: 1px solid rgb(255, 210, 10);
     transition: 800ms;
 
+
 }
 
-.header__nav ul.nav__menu {
-    flex: 1;
-    margin-left: 20px;
-}
 
 /* HERO  */
 
