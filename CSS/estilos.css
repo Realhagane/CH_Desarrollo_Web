@@ -20,6 +20,10 @@ ul {
     list-style: none;
 }
 
+p {
+    padding: 0px;
+    margin: 0px;
+}
 
 
 
@@ -43,17 +47,36 @@ ul {
 }
 
 .navbar ul li a {
+    font-size: 18px;
     color: #030303;
 
 
 }
 
 .navbar ul li a:hover {
-    border-bottom: 1px solid rgb(255, 210, 10);
+    border-bottom: 1px solid #d1ae44;
     transition: 800ms;
 
 
 }
+
+.navbar__texto1 {
+    font-size: 25px;
+    color: #d1ae44;
+    display: inline;
+}
+
+.navbar__texto2 {
+    font-size: 25px;
+    display: inline;
+}
+
+.navbar__texto2:hover {
+    color: #5f5f5d;
+    transition: 600ms;
+}
+
+
 
 
 /* HERO  */
@@ -72,12 +95,13 @@ ul {
     text-align: center;
     justify-content: center;
     padding-bottom: 50px;
+    margin-top: 90px;
 
 
 }
 
 .hero__title {
-    font-size: 6em;
+    font-size: 5em;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 10px black;
     margin-bottom: 100px;
@@ -86,7 +110,7 @@ ul {
 
 .hero__btn {
     color: #030303;
-    background-color: #f1dd04;
+    background-color: rgb(236, 236, 119);
     font-size: 19px;
     border: 0px solid #2d63c8;
     border-radius: 15px;
@@ -311,7 +335,7 @@ ul {
 .footer {
 
     display: flex;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -323,8 +347,17 @@ ul {
 
 
 
+
+
 footer ul li {
     display: inline;
+
+}
+
+footer ul {
+    padding: 0px;
+    margin: 0px;
+
 }
 
 
