@@ -35,15 +35,15 @@ p {
 .header {
 
     padding: 0 5%;
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: rgb(182, 182, 182);
 }
 
 /*______ NAV MENU */
 
 .navbar {
     padding: 25px 0px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(182, 182, 182);
 }
 
 .navbar ul li a {
@@ -55,7 +55,7 @@ p {
 
 .navbar ul li a:hover {
     border-bottom: 1px solid #d1ae44;
-    transition: 800ms;
+    transition: 1100ms;
 
 
 }
@@ -75,7 +75,6 @@ p {
     color: #5f5f5d;
     transition: 600ms;
 }
-
 
 
 
@@ -108,9 +107,11 @@ p {
     font-weight: bold;
 }
 
+
+
 .hero__btn {
     color: #030303;
-    background-color: rgb(236, 236, 119);
+    background-color: rgb(233, 233, 83);
     font-size: 19px;
     border: 0px solid #2d63c8;
     border-radius: 15px;
@@ -127,6 +128,9 @@ p {
 
 /* ABOUS US ///GRID */
 
+
+
+
 .aboutUs {
     display: grid;
     position: relative;
@@ -137,6 +141,13 @@ p {
     padding: 5%;
 }
 
+.aboutUs__tarjetas img:hover {
+    border-radius: 800px;
+    transform: scale(1.1);
+    transition: 1100ms;
+
+}
+
 /* SERVICIOS //// INCLUSIÓN DE GRID */
 
 
@@ -144,8 +155,9 @@ p {
     display: grid;
     background-color: rgb(236, 236, 119);
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 50px;
     padding: 5%;
+
 
 }
 
@@ -156,8 +168,15 @@ p {
 
 }
 
+.servicios__tarjetas img:hover {
+    transform: scale(1.1);
+    transition: 600ms;
+
+}
+
 .servicios__tarjetas h3 {
-    font-size: 20px;
+    padding: 20px 0px;
+    font-size: 25px;
     margin: 10px 0;
 }
 
@@ -175,6 +194,10 @@ p {
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
+}
+
+.servicios__tarjetas P {
+    text-align: justify;
 }
 
 .servicios__tarjetas a:hover {
@@ -195,6 +218,30 @@ p {
 
 }
 
+.tarjetas__titulo--blanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.tarjetas__titulo--blanco:hover {
+    border-bottom: 3px solid #ffffff;
+    transition: 800ms;
+
+}
+
+
+
+
+
+
+
+
+
 
 /* GALERIA */
 
@@ -208,7 +255,10 @@ p {
     padding: 5%;
 }
 
-
+.w-100:hover {
+    transition: 600ms;
+    transform: scale(1.1);
+}
 
 .tarjetas__titulo--negro {
     display: flex;
@@ -216,6 +266,13 @@ p {
     align-items: center;
     font-size: 40px;
     color: rgb(0, 0, 0);
+
+}
+
+.tarjetas__titulo--negro:hover {
+
+    border-bottom: 3px solid #d1ae44;
+    transition: 800ms;
 
 }
 
@@ -320,14 +377,6 @@ p {
 
 }
 
-.direccion {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    font-size: 40px;
-
-}
 
 
 
@@ -341,7 +390,7 @@ p {
     align-items: center;
     border-style: solid;
     border-width: 1px 0px 0px 0px;
-    border-color: rgb(214, 214, 214);
+    border-color: rgb(179, 179, 179);
 
 }
 
@@ -367,12 +416,12 @@ footer ul {
 
 
 .px-3 {
+    margin-top: 97px;
+    padding: 90px;
     background-image: url(../Images/cabeceraweb2.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 38% 62%;
-    height: 300px;
-
 
 }
 
@@ -398,6 +447,10 @@ footer ul {
     padding: 50px;
 }
 
+
+
+
+
 .aboutUs--seccion {
     display: grid;
     position: relative;
@@ -406,6 +459,7 @@ footer ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding-bottom: 30px;
+    padding-top: 40px;
 
 }
 
@@ -418,9 +472,23 @@ footer ul {
     width: 500px
 }
 
+.logo:hover {
+    transition: 600ms;
+    transform: scale(1.5);
+}
+
 .aboutUs__contenido {
     font-size: 20px;
+    text-align: justify;
+    margin: 10px;
 }
+
+.aboutUs__contenido--seccion {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 30px;
+}
+
 
 .aboutUs__equipo {
     display: grid;
@@ -431,6 +499,15 @@ footer ul {
 
 }
 
+
+
+.aboutUs__tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .aboutUs__tarjetas img {
     width: 80%;
     margin-top: 20px;
@@ -439,6 +516,13 @@ footer ul {
 }
 
 .aboutUs__tarjetas h3 {
+    justify-content: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.aboutUs__tarjetas p {
+    text-align: center;
     font-size: 20px;
     margin: 10px 0;
 }
@@ -446,14 +530,35 @@ footer ul {
 .aboutUs__tarjetas--centro {
     margin-left: 10px;
     align-self: center;
+    justify-content: center;
 }
 
+.aboutUs__tarjetas--titulo {
+    font-size: 40px;
+}
+
+
+
 .aboutUs__titulo {
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     color: rgb(255, 255, 255);
+
+
+}
+
+.aboutUs__titulo--espacio {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
 
 }
 
@@ -478,6 +583,11 @@ footer ul {
     display: block;
     margin: auto;
 }
+
+/* ZONA DE PRUEBAS */
+
+
+
 
 /* MEDIA QUERIES */
 
@@ -555,6 +665,8 @@ footer ul {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
 
 @media screen and (max-width: 900px) {
 
