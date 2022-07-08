@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "btn.scss";
 
 
 .hero {
@@ -34,14 +35,14 @@
     color: $colorNegro;
     background-color: $colorTerciario;
     font-size: 19px;
-    border: 0px solid #2d63c8;
+    border: 0px solid #ffffff;
     border-radius: 15px;
     padding: 15px 50px;
     cursor: pointer;
     box-shadow: 1px 1px 10px black;
 
     &:hover {
-        color: #ffffff;
+        color: #cf1515;
         background-color: #ababab;
         transition: 500ms;
 

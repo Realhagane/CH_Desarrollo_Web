@@ -1,6 +1,13 @@
 @import "variables.scss";
 
+@mixin titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
 
+}
 
 .servicios {
     display: grid;
@@ -83,19 +90,13 @@
 }
 
 .tarjetas__titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+    @include titulos;
     color: rgb(255, 255, 255);
 
 }
 
 .tarjetas__titulo--blanco {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+    @include titulos;
     color: rgb(255, 255, 255);
 
     &:hover {
@@ -107,10 +108,7 @@
 }
 
 .tarjetas__titulo--negro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+    @include titulos;
     color: rgb(0, 0, 0);
 
     &:hover {

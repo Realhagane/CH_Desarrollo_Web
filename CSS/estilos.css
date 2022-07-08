@@ -124,6 +124,20 @@ p {
   }
 }
 
+.btn, .btn-primariohero {
+  padding: 15px 50px;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+}
+.btn:hover, .btn-primariohero:hover {
+  color: rgb(14, 14, 14);
+}
+
+.btn-primariohero {
+  background-color: #d1ae44;
+}
+
 .hero {
   display: flex;
   width: 100%;
@@ -153,14 +167,14 @@ p {
   color: black;
   background-color: rgb(236, 236, 119);
   font-size: 19px;
-  border: 0px solid #2d63c8;
+  border: 0px solid #ffffff;
   border-radius: 15px;
   padding: 15px 50px;
   cursor: pointer;
   box-shadow: 1px 1px 10px black;
 }
 .hero__btn:hover {
-  color: #ffffff;
+  color: #cf1515;
   background-color: #ababab;
   transition: 500ms;
 }
@@ -359,6 +373,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 40px;
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
@@ -367,6 +382,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 40px;
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 .tarjetas__titulo--blanco:hover {
@@ -379,6 +395,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 40px;
+  font-weight: bold;
   color: rgb(0, 0, 0);
 }
 .tarjetas__titulo--negro:hover {
