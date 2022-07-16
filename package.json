@@ -1,0 +1,19 @@
+{
+  "name": "idea-ray-redondo",
+  "version": "1.0.0",
+  "description": "Proyecto Coder Servicios Audiovisuales Realtor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Realhagane/CH_Desarrollo_Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Realhagane/CH_Desarrollo_Web/issues"
+  },
+  "homepage": "https://github.com/Realhagane/CH_Desarrollo_Web#readme"
+}
